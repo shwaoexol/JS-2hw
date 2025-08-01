@@ -91,11 +91,24 @@ switch (time) {
         break;
 }
 
-let one = +prompt('Введите первое число')
-let two = +prompt('Введите второе число')
-let three = +prompt('Введите третье число')
+// let one = +prompt('Введите первое число')
+// let two = +prompt('Введите второе число')
+// let three = +prompt('Введите третье число')
 
-if(one > two && two < three) {
-    console.log('Среднее число two');
+// if(one > two && two < three) {
+//     console.log('Среднее число two');
+// }
+
+let one = +prompt('Введите первое число');
+let two = +prompt('Введите второе число');
+let three = +prompt('Введите третье число');
+
+if (one < two && one > three) {
+    console.log('Среднее число: ' + one);
+} else if (two < one && two > three) {
+    console.log('Среднее число: ' + two);
+} else {
+    console.log('Среднее число: ' + three);
 }
+
 
